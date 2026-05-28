@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+
+<html>
+
+
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+		<title>CYOA</title>
+		
+		<style>
+		body 
+		{
+		font-family: 'Vidaloka', serif;
+		}
+		
+		<style>
+		body 
+		{
+		font-family: 'Vidaloka', serif;
+		}
+			
+			p{font-size:24px;}
+			
+			img
+			{
+			height:250px;
+			border-radius:5%;
+			
+			}
+			body {
+			background-color: #fffeb3;
+			transition: background-color 0.3s, color 0.3s;
+			}
+			
+			.darkmode_inside 
+			{	
+			pointer-events: none;
+			}
+			.darkmode_base
+			{
+			width: 50px;
+			height: 50px;
+			border-radius:50%;
+			background-color: #a6a6a6;
+			border: none;
+			top: 30px;
+			right: 30px;
+			position: fixed;
+			cursor: pointer;
+			z-index: 1;
+			}
+			.darkmode_inside
+			{
+			width: 40px;
+			height: 40px;
+			border-radius:50%;
+			background-color: #dedede;
+			border: none;
+			top: 35px;
+			right: 35px;
+			position: fixed;
+			cursor: pointer;
+			z-index: 2;
+			}
+			body.dark-theme 
+			{
+			background-color: #0B0B45;
+			color: white;
+			}
+			</style>
+			
+					<!-- Create light mode dark mode toggle -->
+	</head>
+
+	<body>
+	
+	<div id="darkmode" class="darkmode">
+			<button class="darkmode_inside">L/D</button>
+			<button class="darkmode_base"></button>
+		</div>
+		<center>
+			<h1>Volcano is rumbling</h1>
+		</center>
+		<!-- this makes it formatted in a specific way -->
+		<center>
+			<table>
+				<tr>
+					<td><h3>The ground trembles beneath your feet as you stare up at the towering volcano.<br>
+					A deep, growling rumble echoes from inside the mountain, sending flocks of birds scattering into the sky.<br>
+					Heat radiates through the air, and the smell of ash drifts on the wind. 
+					<br>Your uncle’s notebook warned that danger would follow the clues, but you never imagined you’d be 
+					<br>standing at the base of an active volcano, trying to decide your next move. 
+					<br>Every instinct tells you that time is running out.</h3></td>
+					<td><img src="images/volcano21.jpg"></td>
+				</tr>
+				<tr>					
+					<td><img src="images/volcanoRumble21.jpg"></td>
+					<td><h3>You tighten your grip on the notebook and look toward the narrow path spiraling up the volcano’s side. 
+					<br>Maybe the height will give you a better view of where your uncle was taken. But another path curves around the base,<br>
+					disappearing into the trees — safer, maybe, but slower, and you can’t shake the feeling that something important<br>
+					might be hidden along the outer trail. The volcano rumbles again, louder this time,<br>
+					forcing you to choose quickly before the mountain makes the choice for you. <br>
+					Either way, your adventure is about to take a dramatic turn.</h3></td>
+				</tr>
+			</table>
+		</table>
+	
+		
+		
+		<center>
+			<table>	
+				<tr>
+					<td><a href="page46.html">Walk to the top</a></td>
+					<td><a href="page47.html">Walk around</a></td>
+				</tr>
+			</table>
+		</center>
+		
+			<script>//makes it javascript
+			const darkmodeBtn = document.querySelector('.darkmode_base'); //const means the variable can't be reassigned later, this code makes the variable of the button
+			darkmodeBtn.addEventListener('click', () => //it listens to the event of clicking
+			{
+			document.body.classList.toggle('dark-theme');
+			});
+			</script>
+			
+	</body>
+</html>

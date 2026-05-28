@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+		<title>CYOA</title>
+		
+		<style>
+		body 
+		{
+		font-family: 'Vidaloka', serif;
+		}
+			
+			p{font-size:24px;}
+			
+			img
+			{
+			height:250px;
+			border-radius:5%;
+			
+			}
+			body {
+			background-color: #fffeb3;
+			transition: background-color 0.3s, color 0.3s;
+			}
+			
+			.darkmode_inside 
+			{	
+			pointer-events: none;
+			}
+			.darkmode_base
+			{
+			width: 50px;
+			height: 50px;
+			border-radius:50%;
+			background-color: #a6a6a6;
+			border: none;
+			top: 30px;
+			right: 30px;
+			position: fixed;
+			cursor: pointer;
+			z-index: 1;
+			}
+			.darkmode_inside
+			{
+			width: 40px;
+			height: 40px;
+			border-radius:50%;
+			background-color: #dedede;
+			border: none;
+			top: 35px;
+			right: 35px;
+			position: fixed;
+			cursor: pointer;
+			z-index: 2;
+			}
+			body.dark-theme 
+			{
+			background-color: #0B0B45;
+			color: white;
+			}
+			</style>
+			
+					<!-- Create light mode dark mode toggle -->
+	</head>
+
+	<body>
+	
+	<div id="darkmode" class="darkmode">
+			<button class="darkmode_inside">L/D</button>
+			<button class="darkmode_base"></button>
+		</div>
+		<center>
+			<h1>At the Louvre</h1>
+		</center>
+		<!-- this makes it formatted in a specific way -->
+		<center>
+			<table>
+				<tr>
+					<td><h3>You study the latest clue in your uncle’s notebook, tracing the faded ink with your thumb.<br>
+					The sketch looks like a pyramid, but the note beside it mentions “the great museum of secrets.” <br>
+					You turn the page, hoping for more, but the rest is smudged beyond recognition.<br>
+					Still, something about the drawing pulls at your memory — a shape you’ve seen before, somewhere grand, somewhere important.<br>
+					Your heart beats faster as you realise the clue could point to two very different places, and only one will lead you closer to your missing uncle.</h3></td>
+					<td><img src="images/louvreClue11.jpg"></td>
+				</tr>
+				<tr>					
+					<td><img src="images/louvre11.jpg"></td>
+					<td><h3>You step out into the bustling Paris street, the notebook tucked safely under your arm.<br>
+					Ahead, the glass pyramid of the Louvre gleams in the sunlight, its sharp edges matching the sketch almost perfectly.<br>
+					But another thought nags at you: what if the clue really does mean an actual pyramid — the kind buried in the sands of Egypt?<br>
+					The decision weighs heavily on you. One path keeps you in Paris, the other sends you across continents. <br>
+					Either way, your adventure is about to take a dramatic turn.</h3></td>
+				</tr>
+			</table>
+		</table>
+		</center>
+		
+		
+		<center>
+			<table>	
+				<tr>
+					<td><a href="page22.html">Go to Egypt	</a></td>
+					<td><a href="page19.html">	Enter the Louvre</a></td>
+				</tr>
+			</table>
+		</center>
+		
+			<script>//makes it javascript
+			const darkmodeBtn = document.querySelector('.darkmode_base'); 
+			darkmodeBtn.addEventListener('click', () =>
+			{
+			document.body.classList.toggle('dark-theme');
+			});
+			</script>
+			
+	</body>
+</html>
